@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      ProyectosPyansa: {
+        Row: {
+          connections: Json | null
+          created_at: string
+          database_type: string | null
+          development_type: string | null
+          diagram_url: string | null
+          id: number
+          language: string | null
+          proyect_description: string
+          proyect_id: number
+          proyect_name: string
+          purpose: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          connections?: Json | null
+          created_at?: string
+          database_type?: string | null
+          development_type?: string | null
+          diagram_url?: string | null
+          id?: number
+          language?: string | null
+          proyect_description: string
+          proyect_id: number
+          proyect_name: string
+          purpose?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          connections?: Json | null
+          created_at?: string
+          database_type?: string | null
+          development_type?: string | null
+          diagram_url?: string | null
+          id?: number
+          language?: string | null
+          proyect_description?: string
+          proyect_id?: number
+          proyect_name?: string
+          purpose?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
